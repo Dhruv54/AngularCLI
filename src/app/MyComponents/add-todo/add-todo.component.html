@@ -1,0 +1,12 @@
+<h5>Add Todos..</h5>
+<form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+        <label for="title" class="form-label">Title</label>
+        <input type="text" class="form-control" id="title" [(ngModel)]="title" name="title">
+    </div>
+    <div class="mb-3">
+        <label for="desc" class="form-label">Description</label>
+        <input type="text" class="form-control" id="desc" [(ngModel)]="desc" name="desc">
+    </div>
+    <button type="submit" class="btn btn-sm btn-primary">ADD</button>
+</form>
